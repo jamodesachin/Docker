@@ -1,3 +1,5 @@
 install jq for logs --- sudo apt insall jq apt 
 install net-tools install docker -- curl https://get.docker.com/ | bash
 docker run --rm --name app:latest ----rm when container is stop it ps will delete.
+docker network create myapp --driver bridge   (create a network)
+docker run --rm -d --name app3 -p 8001 --network myapp kiran2361993/troubleshootingtools:v1   (image with all network troubleshooting)
