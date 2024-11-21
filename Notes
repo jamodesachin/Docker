@@ -5,4 +5,6 @@ docker network create myapp --driver bridge   (create a network)
 docker run --rm -d --name app3 -p 8001 --network myapp kiran2361993/troubleshootingtools:v1   (image with all network troubleshooting)
 docker image prune
 docker system prune  You can combine cleanup commands (like for images, containers, and volumes) for a broader cleanup:
-Container talks to host using Bridege network.
+Container talks to host using Brideg network. It creates a virtual ethernet network that docker0.
+
+arguments while building and env variable while running
